@@ -4,4 +4,4 @@ pickle5
 scikit-learn
 numpy
 pandas
-gunicorn==19.9.0
+gunicorn
