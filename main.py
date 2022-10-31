@@ -36,7 +36,7 @@ class model_input(BaseModel):
 #load saved model
 diabetes_model= pickle.load(open("trained_model.sav","rb"))
 
-@app.get("/diabetes_pred")
+@app.post("/diabetes_prediction")
 
 def diabetes_pred(input_parameters: model_input):
     input_data= input_parameters.json()
